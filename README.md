@@ -1,110 +1,142 @@
 # 📊 Online Retail Analytics Dashboard
 
-### Análisis de ventas, productos, clientes y mercados mediante Python y Business Intelligence
+### Transformando datos transaccionales en decisiones de negocio
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white">
   <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge&logo=pandas&logoColor=white">
-  <img src="https://img.shields.io/badge/Matplotlib-Visualization-11557C?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/Plotly-Interactive%20Charts-3F4F75?style=for-the-badge&logo=plotly&logoColor=white">
   <img src="https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white">
-  <img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white">
+  <img src="https://img.shields.io/badge/Git-GitHub-F05032?style=for-the-badge&logo=git&logoColor=white">
+</p>
+
+<p align="center">
+  <a href="https://proyecto01onlineretail-ka2sk4agcqxz762kkbeflu.streamlit.app/">
+    <img src="https://img.shields.io/badge/🚀_VER_DASHBOARD_EN_VIVO-Streamlit-FF4B4B?style=for-the-badge">
+  </a>
 </p>
 
 ---
 
-## 🚀 Sobre el proyecto
+## 🚀 Dashboard en vivo
 
-**Online Retail Analytics Dashboard** es un proyecto de análisis de datos desarrollado en Python a partir del dataset **Online Retail**, compuesto por transacciones de un negocio de comercio electrónico.
+### 👉 [Abrir Online Retail Analytics Dashboard](https://proyecto01onlineretail-ka2sk4agcqxz762kkbeflu.streamlit.app/)
 
-El proyecto implementa un flujo completo de análisis de datos, desde la exploración y limpieza de la información hasta el análisis exploratorio, generación de visualizaciones e implementación de un dashboard interactivo mediante Streamlit.
+Explora directamente el dashboard interactivo desarrollado con **Python, Pandas, Plotly y Streamlit**.
 
-El objetivo es transformar datos transaccionales en información útil para comprender el comportamiento de las ventas, identificar productos y clientes de alto valor, analizar los principales mercados y detectar patrones relevantes para la toma de decisiones.
+El dashboard permite analizar:
+
+- 💰 Ventas
+- 📦 Productos
+- 👥 Clientes
+- 🌎 Mercados
+- 🔄 Devoluciones
+- 📈 Evolución temporal
+- 🎯 Concentración de ventas
 
 ---
 
-## 🎯 Objetivos del análisis
+# 📌 Sobre el proyecto
 
-El proyecto busca responder preguntas de negocio como:
+**Online Retail Analytics Dashboard** es un proyecto de análisis de datos desarrollado en Python a partir del dataset **Online Retail**, compuesto por transacciones de comercio electrónico.
 
-- ¿Cómo evolucionan las ventas durante el periodo analizado?
-- ¿Cuáles son los principales mercados?
+El proyecto fue diseñado para simular un escenario real de análisis comercial, donde los datos transaccionales deben convertirse en información útil para comprender el comportamiento del negocio.
+
+El flujo de trabajo abarca desde la **exploración y limpieza de datos** hasta el **análisis exploratorio, generación de indicadores, visualización y construcción de un dashboard interactivo**.
+
+> **Objetivo:** transformar datos transaccionales en insights accionables que permitan comprender ventas, productos, clientes y mercados.
+
+---
+
+# 🎯 Problema de negocio
+
+Los datos transaccionales por sí solos no permiten tomar decisiones fácilmente.
+
+Por esta razón, este proyecto busca responder preguntas relevantes para un negocio de comercio electrónico:
+
+- ¿Cómo evolucionan las ventas a través del tiempo?
+- ¿Qué mercados generan mayor facturación?
 - ¿Qué productos generan mayores ingresos?
-- ¿Qué productos presentan mayor volumen de unidades vendidas?
-- ¿Cuáles son los clientes de mayor valor?
-- ¿Cuál es el valor promedio de las compras?
+- ¿Qué productos presentan mayor volumen de unidades?
+- ¿Quiénes son los clientes de mayor valor?
+- ¿Cuál es el ticket promedio?
 - ¿Qué impacto tienen las devoluciones?
-- ¿Existe concentración de las ventas en determinados clientes?
+- ¿Existe concentración de ingresos en determinados clientes?
+- ¿Qué diferencia existe entre productos de alto valor y productos de alta rotación?
 
 ---
 
-## 🔎 Preguntas de negocio
+# 📊 Principales indicadores
 
-El análisis se estructura alrededor de las siguientes preguntas:
+El dashboard permite consultar dinámicamente indicadores como:
 
-1. ¿Cuánto dinero generan las ventas?
-2. ¿Cómo evolucionan las ventas mes a mes?
-3. ¿Qué países generan mayores ingresos?
-4. ¿Cuáles son los productos más importantes comercialmente?
-5. ¿Qué productos tienen mayor rotación?
-6. ¿Cuáles son los clientes de mayor valor?
-7. ¿Cuál es el valor promedio de una factura?
-8. ¿Qué impacto tienen las devoluciones?
-9. ¿Existe concentración de las ventas en determinados clientes?
-
----
-
-# 📂 Dataset
-
-El proyecto utiliza el dataset **Online Retail**, compuesto por registros de transacciones realizadas en un entorno de comercio electrónico.
-
-### Principales variables
-
-| Variable | Descripción |
+| KPI | Descripción |
 |---|---|
-| `InvoiceNo` | Número de factura |
-| `StockCode` | Código del producto |
-| `Description` | Descripción del producto |
-| `Quantity` | Cantidad de unidades |
-| `InvoiceDate` | Fecha y hora de la transacción |
-| `UnitPrice` | Precio unitario |
-| `CustomerID` | Identificador del cliente |
-| `Country` | País del cliente |
+| 💰 Ventas totales | Valor neto de las transacciones |
+| 📦 Unidades | Total de unidades registradas |
+| 🧾 Facturas | Número de transacciones únicas |
+| 👥 Clientes | Clientes identificados |
+| 🎟️ Ticket promedio | Valor promedio por factura |
+| 💵 Ticket positivo | Promedio considerando únicamente facturas positivas |
+| 🔄 Devoluciones | Impacto de devoluciones sobre las ventas |
+
+Los indicadores se recalculan automáticamente según los filtros seleccionados.
 
 ---
 
-# 🧹 Limpieza y preparación de datos
+# 🔎 Análisis realizado
 
-Antes de realizar el análisis se llevó a cabo una etapa de exploración y limpieza de los datos.
+## 💰 Análisis de ventas
 
-Se revisaron diferentes aspectos relacionados con la calidad de la información:
+Se estudió la evolución temporal de las ventas para identificar cambios en el comportamiento comercial.
 
-- Valores faltantes.
-- Registros duplicados.
-- Cantidades negativas.
-- Precios unitarios iguales a cero.
-- Códigos especiales.
-- Fechas.
-- Identificadores de clientes.
-- Consistencia de los registros.
+Se analizaron:
 
-### Dataset original
+- Ventas totales
+- Evolución mensual
+- Número de facturas
+- Unidades vendidas
+- Ticket promedio
+- Devoluciones
 
-El dataset inicialmente contenía:
+---
 
-- **541,909 registros**
-- **8 columnas**
-- **5,268 registros duplicados**
-- **1,454 registros sin `Description`**
-- **135,080 registros sin `CustomerID`**
-- **10,624 registros con `Quantity` negativa**
-- **2,515 registros con `UnitPrice` igual a 0**
+## 🌎 Análisis de mercados
 
-Los registros duplicados fueron eliminados para evitar que transacciones repetidas afectaran los resultados del análisis.
+Se analizaron los ingresos generados por país para identificar los principales mercados.
 
-### Resultado después de eliminar duplicados
+El dashboard permite observar:
+
+- Países con mayor facturación
+- Concentración de ventas
+- Distribución geográfica del negocio
+- Diferencias entre mercados
+
+---
+
+## 📦 Análisis de productos
+
+Los productos fueron analizados desde dos perspectivas diferentes:
+
+### Ingresos
+
+¿Qué productos generan mayor facturación?
+
+### Volumen
+
+¿Qué productos presentan mayor cantidad de unidades vendidas?
+
+Esta comparación permite diferenciar entre:
+
+> **Productos de alto valor comercial**
+
+y
+
+> **Productos de alta rotación**
+
+Además, se excluyeron códigos especiales como:
 
 ```text
-Registros iniciales:         541,909
-Registros duplicados:          5,268
-Registros después limpieza:  536,641
-Duplicados restantes:              0           0
+POST
+DOT
+M
