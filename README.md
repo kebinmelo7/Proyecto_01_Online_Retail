@@ -140,3 +140,27 @@ Además, se excluyeron códigos especiales como:
 POST
 DOT
 M
+
+
+
+
+---
+
+## 👨‍💻 Autor
+
+**Kebin Santiago Melo Prada**
+
+**Ingeniero Electrónico | Analista de Datos | Python · SQL · Power BI · Inteligencia Artificial**
+
+Actualmente cursando una **Especialización en Inteligencia Artificial aplicada al Análisis de Datos**, con interés en transformar datos en información útil para la toma de decisiones empresariales.
+
+### 🔗 Perfiles y proyecto
+
+- 🐙 **GitHub:** [@kebinmelo7](https://github.com/kebinmelo7)
+- 📊 **Dashboard:** [Online Retail Analytics](https://proyecto01onlineretail-ka2sk4agcqxz762kkbeflu.streamlit.app/)
+
+---
+
+<p align="center">
+  Desarrollado con 🧠 Python y 📊 pasión por los datos
+</p>
